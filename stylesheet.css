@@ -2,7 +2,7 @@ body{
 	background-color:grey;
 }
 
-#banner{
+#top{
 	z-index: 2;
 	position:relative;
 	background-color: lightblue;
@@ -19,7 +19,7 @@ body{
 	border-left-color:grey;
 }
 
-#bannertext{
+#toptext{
 	font-size: .75em;
 	text-align:center;
 	color:black;
@@ -42,8 +42,9 @@ body{
 #middle a{
 	color:white;
 }
-#right{
+#body{
 	z-index:1;
+	background-position: 50% 100%;
 	position: relative;
 	margin:auto;
 	width: 100%;
