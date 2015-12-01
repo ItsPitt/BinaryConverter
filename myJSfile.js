@@ -1,3 +1,9 @@
+//	Michael Pittard
+//	myJSfile.js
+//	Binary Converter
+//	Version 1.0
+
+
 		function makeBinary()
 		{
 			var hexy;
