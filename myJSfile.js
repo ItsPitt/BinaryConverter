@@ -2,6 +2,8 @@
 		{
 			var hexy;
 			hexy = document.getElementById("hexNum").value;
+
+			var howBigIsHexy1 = hexy.length;
 			hexy = hexy.toLowerCase();
 			hexy = hexy.replace(/0/g,"0000");
 			hexy = hexy.replace(/1/g,"0001");
@@ -19,6 +21,11 @@
 			hexy = hexy.replace(/d/g,"1101");
 			hexy = hexy.replace(/e/g,"1110");
 			hexy = hexy.replace(/f/g,"1111");
+			var howBigIsHexy2 = hexy.length;
+			if(howBigIsHexy2 != howBigIsHexy1 * 4)
+			{
+				hexy = "Invalid input";
+			}
 			document.getElementById("returnB").innerHTML = hexy;
 		}
 
@@ -27,6 +34,7 @@
 		{
 			var hexy;
 			hexy = document.getElementById("hexNum").value;
+			var howBigIsHexy1 = hexy.length;
 			hexy = hexy.toLowerCase();
 			hexy = hexy.replace(/0/g,"0000");
 			hexy = hexy.replace(/1/g,"0001");
@@ -44,7 +52,13 @@
 			hexy = hexy.replace(/d/g,"1101");
 			hexy = hexy.replace(/e/g,"1110");
 			hexy = hexy.replace(/f/g,"1111");
-
+			var howBigIsHexy2 = hexy.length;
+			if(howBigIsHexy2 != howBigIsHexy1 * 4)
+			{
+				hexy = "Invalid input";
+				document.getElementById("returnD").innerHTML = hexy;
+				return 0;
+			}
 			var sizeOfHexy = hexy.length;
 
 			var total = 0;
